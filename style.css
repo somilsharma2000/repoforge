@@ -138,3 +138,6 @@ a { color: inherit; text-decoration: none; }
   .hero-stats { gap: 22px; }
   .stat-num { font-size: 1.5rem; }
 }
+
+/* Fix: ensure hidden attribute always wins over any display rule */
+[hidden] { display: none !important; }
