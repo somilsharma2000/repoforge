@@ -30,6 +30,16 @@ async function loadData() {
   });
 
   renderGrid(REPOS);
+
+  // dynamic niche-map title + footer count
+  document.querySelectorAll(".section-title").forEach((el) => {
+    if (el.textContent.includes("Niches Across")) {
+      el.textContent = "The Niche Map — " + TAXONOMY.total_niches + " Niches Across " + TAXONOMY.fields.length + " Fields";
+    }
+  });
+  const fc = document.getElementById("footer-niches");
+  if (fc) fc.textContent = TAXONOMY.total_niches;
+
   renderNicheMap();
 }
 
