@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RepoForge — Turn Open-Source Into Income</title>
+  <meta name="description" content="The catalog of verified open-source repositories with step-by-step money-making guides. 500+ niches, every field, every industry." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">Repo<span class="logo-accent">Forge</span></a>
+      <div class="nav-links">
+        <a href="#catalog">Catalog</a>
+        <a href="#nichemap">Niche Map</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://github.com" target="_blank" class="nav-gh">⭐ Star on GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-badge">🔥 The Open-Source Money Catalog</div>
+      <h1>Turn <span class="accent">Open-Source</span> Into Income</h1>
+      <p class="hero-sub">
+        Every field. Every niche. Every industry.<br/>
+        Verified GitHub repositories — each with a step-by-step guide from zero to making money.
+        Built for students, freelancers, agencies, and business owners.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num" id="stat-repos">96</div><div class="stat-label">Verified Repos</div></div>
+        <div class="stat"><div class="stat-num" id="stat-niches">533</div><div class="stat-label">Niches Mapped</div></div>
+        <div class="stat"><div class="stat-num" id="stat-fields">24</div><div class="stat-label">Industry Fields</div></div>
+        <div class="stat"><div class="stat-num" id="stat-ideas">288+</div><div class="stat-label">Business Ideas</div></div>
+      </div>
+      <div class="hero-cta">
+        <a href="#catalog" class="btn btn-primary">Browse All Repos</a>
+        <a href="#nichemap" class="btn btn-ghost">Explore the Niche Map</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATALOG -->
+  <main class="catalog" id="catalog">
+    <div class="catalog-inner">
+      <h2 class="section-title">The Catalog</h2>
+      <p class="section-sub">Search <span id="count-shown">96</span> verified repos across every industry. Click any card for the full step-by-step money guide.</p>
+
+      <!-- CONTROLS -->
+      <div class="controls">
+        <input type="search" id="search" class="search" placeholder="🔍  Search repos, niches, business ideas…" />
+        <div class="filters">
+          <select id="filter-field" class="select">
+            <option value="">All Fields</option>
+          </select>
+          <select id="filter-license" class="select">
+            <option value="">All Licenses</option>
+            <option value="safe">🟢 Safe — sell freely</option>
+            <option value="caution">🔴 Caution — check license</option>
+          </select>
+          <select id="filter-difficulty" class="select">
+            <option value="">All Levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+          <select id="sort" class="select">
+            <option value="stars">⭐ Sort: Stars</option>
+            <option value="name">A–Z Sort: Name</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- GRID -->
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>No repos match your filters. Try clearing the search.</div>
+    </div>
+  </main>
+
+  <!-- NICHE MAP -->
+  <section class="nichemap" id="nichemap">
+    <div class="catalog-inner">
+      <h2 class="section-title">The Niche Map — 533 Niches Across 24 Fields</h2>
+      <p class="section-sub">Every industry where open-source software can become a business. Green = covered by a verified repo. Gray = researched next.</p>
+      <div class="fields-grid" id="fields-grid"></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-inner">
+      <h2 class="section-title">Unlock Full Access</h2>
+      <div class="price-card">
+        <div class="price">$49</div>
+        <div class="price-note">one-time payment</div>
+        <ul class="price-list">
+          <li>✅ All step-by-step money guides</li>
+          <li>✅ 3 business ideas per repo with target customers & pricing</li>
+          <li>✅ License risk analysis (know what you can legally sell)</li>
+          <li>✅ Monetization paths & production caveats</li>
+          <li>✅ Lifetime updates as new niches are researched</li>
+          <li>✅ 30-day money-back guarantee</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block">Get Full Access</a>
+        <p class="price-fine">Instant download · No subscription · Future niche updates included</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Repo<span class="logo-accent">Forge</span></div>
+      <p>The catalog of verified open-source repositories with step-by-step money-making guides.</p>
+      <p class="footer-note"><span id="footer-count">96</span> verified repos · 533 niches mapped · 24 industry fields · Updating weekly</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
