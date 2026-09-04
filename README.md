@@ -10,7 +10,7 @@ Every field. Every niche. Every industry — AI, automation, chatbots, CRM, soci
 |---|---|
 | **Verified repos** | 96 (growing weekly — 500+ niches mapped) |
 | **Industry fields** | 24 |
-| **Niches mapped** | 533 |
+| **Niches mapped** | 535 |
 | **Business ideas** | 3 per repo (288+ total) with target customers & pricing |
 | **Guides** | Step-by-step, 10th-grade reading level, every tool explained |
 | **License analysis** | Every repo flagged 🟢 safe-to-sell or 🔴 check-first |

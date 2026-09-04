@@ -96,7 +96,7 @@ function renderNicheMap() {
       const niches = f.niches
         .map((n) => {
           const isCov = covered.has(n.niche.toLowerCase());
-          return '<span class="niche ' + (isCov ? "niche-covered" : "nicie-todo niche-todo") + '">' + esc(n.niche) + "</span>";
+          return '<span class="niche ' + (isCov ? "niche-covered" : "niche-todo") + '">' + esc(n.niche) + "</span>";
         })
         .join("");
       const done = f.niches.filter((n) => covered.has(n.niche.toLowerCase())).length;

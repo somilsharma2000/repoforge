@@ -1,4 +1,4 @@
-# The Niche Map — 533 Niches Across 24 Fields
+# The Niche Map — 535 Niches Across 24 Fields
 
 The complete map of every industry and sub-niche where open-source software can become a sellable product.
 Each niche lists its seed repo. Niches without a verified repo yet are marked *(researching)*.
@@ -47,7 +47,7 @@ Each niche lists its seed repo. Niches without a verified repo yet are marked *(
 - Semantic caching — seed: `zilliztech/GPTCache`
 - Meeting transcription & AI notes *(researching)*
 
-## Developer Tools (44 niches)
+## Developer Tools (46 niches)
 
 - React framework — seed: `vercel/next.js`
 - Compile-time framework — seed: `sveltejs/svelte`
@@ -93,6 +93,8 @@ Each niche lists its seed repo. Niches without a verified repo yet are marked *(
 - Data tables — seed: `TanStack/table`
 - Image processing — seed: `lovell/sharp`
 - File uploads — seed: `transloadit/uppy`
+- Backend-as-a-Service — seed: `supabase/supabase`
+- Single-file backend — seed: `pocketbase/pocketbase`
 
 ## E-commerce & CMS (21 niches)
 
@@ -609,4 +611,4 @@ Each niche lists its seed repo. Niches without a verified repo yet are marked *(
 - Tournament platforms *(researching)*
 
 ---
-**Total: 533 niches across 24 fields.**
+**Total: 535 niches across 24 fields.**
